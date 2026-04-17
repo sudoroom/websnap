@@ -1,0 +1,16 @@
+[Unit]
+Description=websnap.service
+After=network.target
+
+[Service]
+User=stuff
+Restart=always
+RestartSec=10
+ExecStart=/home/stuff/websnap/run.sh
+
+StandardOutput=append:/var/log/websnap.log
+StandardError=append:/var/log/websnap_error.log
+# using file: instead of append: would create a new file eeach time
+
+[Install]
+WantedBy=multi-user.target
