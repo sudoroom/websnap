@@ -1,5 +1,4 @@
-let stuff_org_port = "2000"; // SET THIS TO THE PORT OF STUFF-ORG
-let stuff_org_address = window.location.protocol + "//" + window.location.hostname + ":" + stuff_org_port;
+let stuff_org_address = window.location.protocol + "//" + window.location.hostname + "/stuff";
 let camera_button = document.querySelector("#start-camera");
 let video = document.querySelector("#video");
 let canvas = document.querySelector("#canvas");
